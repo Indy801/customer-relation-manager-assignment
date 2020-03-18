@@ -1,6 +1,6 @@
-<div>
+<div class="customer-card">
   <h2><%= customer.full_name %></h2>
-  <p><%= image_tag customer.image %></p>
+  <p><%= image_tag customer.image if customer.image.attached? %></p>
   <p><%= customer.phone_number %></p>
   <p><%= customer.email %></p>
 </div>
