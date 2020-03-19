@@ -3,7 +3,11 @@ class CustomersController < ApplicationController
     @customers = Customer.all
   end
 
-  def alphabetized; end
+  def alphabetized
+    @customers = Customer.all.order(:full_name)
+  end
 
-  def missing_email; end
+  def missing_email
+    @customers = Customer.where("email = ''")
+  end
 end

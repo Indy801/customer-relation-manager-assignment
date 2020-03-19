@@ -1,2 +1,9 @@
-<h1>Customers#alphabetized</h1>
-<p>Find me in app/views/customers/alphabetized.html.erb</p>
+<h1>All Customers Ordered Alphabetically</h1>
+
+<div class="customer-grid">
+<% @customers.each do |customer| %>
+
+<%= render partial: 'customer', locals: { customer: customer } %>
+
+<% end %>
+</div>
