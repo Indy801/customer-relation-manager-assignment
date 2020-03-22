@@ -10,6 +10,13 @@
   </head>
 
   <body>
+    <div class="links">
+      <ul>
+        <li><%= link_to 'Home', root_path %></li>
+        <li><%= link_to 'Alphabetized', alphabetized_customers_path %></li>
+        <li><%= link_to 'Missing Email', missing_email_customers_path %></li>
+      </ul>
+    </div>
     <%= yield %>
   </body>
 </html>

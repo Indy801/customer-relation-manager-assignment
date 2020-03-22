@@ -20,3 +20,28 @@
   display: flex;
   flex-wrap: wrap;
 }
+
+.links {
+  background-color: #dddddd;
+
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0 0 10px 0;
+
+    li {
+      margin: 0 10px;
+      padding: 5px;
+
+      a:link, a:visited {
+        text-decoration: none;
+        color: #007de4;
+      }
+
+      a:hover {
+        color: #4395d8;
+      }
+    }
+  }
+}
+

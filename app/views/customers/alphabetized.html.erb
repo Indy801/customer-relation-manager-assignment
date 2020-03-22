@@ -1,13 +1,5 @@
 <h1>All Customers Ordered Alphabetically</h1>
 
-<div class="link">
-  <ul>
-    <li><%= link_to 'Home', root_path %></li>
-    <li><%= link_to 'Alphabetized', alphabetized_customers_path %></li>
-    <li><%= link_to 'Missing Email', missing_email_customers_path %></li>
-  </ul>
-</div>
-
 <div class="customer-grid">
 <% @customers.each do |customer| %>
 
